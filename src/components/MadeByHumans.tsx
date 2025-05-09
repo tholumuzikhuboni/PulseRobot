@@ -28,12 +28,11 @@ const MadeByHumans = () => {
                   padding: "0px 0px 100px"
                 }}
               >
-                Made By AI & Human
+                Made By Muzi
               </h2>
             </div>
             
-            {/* White box at the bottom with overflow */}
-            <div className="w-[120%] bg-white h-10 rounded-t-lg absolute left-[-10%] bottom-0"></div>
+            {/* Removing the white box at the bottom */}
           </div>
         </div>
       </div>
