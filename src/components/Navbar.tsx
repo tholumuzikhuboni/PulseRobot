@@ -87,15 +87,16 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Navigation - improved for better touch experience */}
+      {/* Mobile Navigation - enhanced layout with close button */}
       <div className={cn(
-        "fixed inset-0 z-40 bg-white flex flex-col pt-16 px-6 md:hidden transition-all duration-300 ease-in-out",
+        "fixed inset-0 z-40 bg-white flex flex-col md:hidden transition-all duration-300 ease-in-out",
         isMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full pointer-events-none"
       )}>
-        <nav className="flex flex-col space-y-8 items-center mt-8">
+        {/* Close button at the top right */}
+        <div className="flex justify-between items-center px-6 pt-6 pb-4 border-b">
           <a 
             href="#" 
-            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" 
+            className="flex items-center space-x-2"
             onClick={(e) => {
               e.preventDefault();
               scrollToTop();
@@ -103,29 +104,64 @@ const Navbar = () => {
               document.body.style.overflow = '';
             }}
           >
-            Home
+            <img 
+              src="/logo.svg" 
+              alt="Pulse Robot Logo" 
+              className="h-7" 
+            />
+          </a>
+          <button 
+            className="p-2 rounded-full hover:bg-gray-100" 
+            onClick={toggleMenu}
+            aria-label="Close menu"
+          >
+            <X size={24} className="text-gray-700" />
+          </button>
+        </div>
+
+        <nav className="flex flex-col px-6 py-8">
+          <a 
+            href="#" 
+            className="text-lg font-medium py-4 border-b border-gray-100 flex items-center justify-between hover:text-pulse-500" 
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToTop();
+              setIsMenuOpen(false);
+              document.body.style.overflow = '';
+            }}
+          >
+            <span>Home</span>
+            <span className="text-gray-400 text-sm">01</span>
           </a>
           <a 
             href="#features" 
-            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" 
+            className="text-lg font-medium py-4 border-b border-gray-100 flex items-center justify-between hover:text-pulse-500" 
             onClick={() => {
               setIsMenuOpen(false);
               document.body.style.overflow = '';
             }}
           >
-            About
+            <span>About</span>
+            <span className="text-gray-400 text-sm">02</span>
           </a>
           <a 
             href="#details" 
-            className="text-xl font-medium py-3 px-6 w-full text-center rounded-lg hover:bg-gray-100" 
+            className="text-lg font-medium py-4 border-b border-gray-100 flex items-center justify-between hover:text-pulse-500" 
             onClick={() => {
               setIsMenuOpen(false);
               document.body.style.overflow = '';
             }}
           >
-            Contact
+            <span>Contact</span>
+            <span className="text-gray-400 text-sm">03</span>
           </a>
         </nav>
+
+        <div className="mt-auto p-6 border-t border-gray-100">
+          <p className="text-sm text-gray-500">
+            © 2025 Pulse Robot. All rights reserved.
+          </p>
+        </div>
       </div>
     </header>
   );
