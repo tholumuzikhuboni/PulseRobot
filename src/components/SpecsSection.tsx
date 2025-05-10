@@ -3,7 +3,7 @@ import React from "react";
 
 const SpecsSection = () => {
   return (
-    <section className="w-full py-6 sm:py-10 bg-white" id="specifications">
+    <section className="w-full py-6 sm:py-10 bg-white -mt-16 sm:-mt-20 md:-mt-24 lg:-mt-32" id="specifications">
       <div className="container px-4 sm:px-6 lg:px-8 mx-auto">
         {/* Header with badge and line */}
         <div className="flex items-center gap-4 mb-8 sm:mb-16">

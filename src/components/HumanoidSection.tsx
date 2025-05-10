@@ -88,7 +88,7 @@ const HumanoidSection = () => {
     <div 
       ref={sectionRef} 
       className="relative" 
-      style={{ height: '200vh' }} // Reduced from 300vh to 200vh for faster scrolling
+      style={{ height: '180vh' }} // Reduced from 200vh to 180vh for less spacing
     >
       <section className="w-full h-screen py-10 md:py-16 sticky top-0 overflow-hidden bg-white" id="why-humanoid">
         <div className="container px-6 lg:px-8 mx-auto h-full flex flex-col">
