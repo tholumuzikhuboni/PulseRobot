@@ -89,9 +89,9 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Navigation - with solid white background regardless of scroll position */}
+      {/* Mobile Navigation - with full viewport height and fixed positioning */}
       <div className={cn(
-        "fixed inset-0 z-40 bg-white flex flex-col md:hidden transition-all duration-300 ease-in-out",
+        "fixed inset-0 z-40 bg-white flex flex-col md:hidden transition-all duration-300 ease-in-out h-[100vh]",
         isMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full pointer-events-none"
       )}>
         {/* Close button at the top right */}
@@ -121,7 +121,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        <nav className="flex flex-col px-6 py-8 bg-white">
+        <nav className="flex flex-col px-6 py-8 bg-white flex-grow overflow-y-auto">
           <a 
             href="#" 
             className="text-lg font-medium py-4 border-b border-gray-100 flex items-center justify-between hover:text-pulse-500" 
