@@ -3,7 +3,8 @@ Welcome to the Pulse Robot, A free template built by Tholumuzi Kuboni with the h
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/35d72d2e-6e25-40e5-9b0c-c0d1a7c1b727
+**URL**: 
+https://pulse-robot.vercel.app/
 
 ## How can I edit this code?
 
