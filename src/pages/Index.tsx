@@ -67,7 +67,6 @@ const Index = () => {
         <SpecsSection />
         <DetailsSection />
         <ImageShowcaseSection />
-        <div className="h-8 sm:h-12 bg-white"></div> {/* Spacer div for additional separation */}
         <Features />
         <Testimonials />
         <Newsletter />

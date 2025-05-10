@@ -3,7 +3,7 @@ import React from "react";
 
 const ImageShowcaseSection = () => {
   return (
-    <section className="w-full pt-0 pb-16 sm:pb-24 bg-white" id="showcase">
+    <section className="w-full pt-8 sm:pt-16 pb-16 sm:pb-24 bg-white" id="showcase">
       <div className="container px-4 sm:px-6 lg:px-8 mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-8 sm:mb-12 animate-on-scroll">
           <h2 className="text-3xl sm:text-4xl font-display font-bold tracking-tight text-gray-900 mb-3 sm:mb-4">

@@ -89,13 +89,13 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Navigation - enhanced layout with close button */}
+      {/* Mobile Navigation - with solid white background regardless of scroll position */}
       <div className={cn(
         "fixed inset-0 z-40 bg-white flex flex-col md:hidden transition-all duration-300 ease-in-out",
         isMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 translate-x-full pointer-events-none"
       )}>
         {/* Close button at the top right */}
-        <div className="flex justify-between items-center px-6 pt-6 pb-4 border-b">
+        <div className="flex justify-between items-center px-6 pt-6 pb-4 border-b bg-white">
           <a 
             href="#" 
             className="flex items-center space-x-2"
@@ -121,7 +121,7 @@ const Navbar = () => {
           </button>
         </div>
 
-        <nav className="flex flex-col px-6 py-8">
+        <nav className="flex flex-col px-6 py-8 bg-white">
           <a 
             href="#" 
             className="text-lg font-medium py-4 border-b border-gray-100 flex items-center justify-between hover:text-pulse-500" 
@@ -181,7 +181,7 @@ const Navbar = () => {
           </a>
         </nav>
 
-        <div className="mt-auto p-6 border-t border-gray-100">
+        <div className="mt-auto p-6 border-t border-gray-100 bg-white">
           <p className="text-sm text-gray-500">
             © 2025 Pulse Robot. All rights reserved.
           </p>
