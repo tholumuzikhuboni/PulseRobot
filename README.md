@@ -1,4 +1,5 @@
-# Welcome to your Lovable project
+# Pulse Robot
+Welcome to the Pulse Robot, A free template built by Tholumuzi Kuboni with the help of @Lovable.dev
 
 ## Project info
 
@@ -6,13 +7,7 @@
 
 ## How can I edit this code?
 
-There are several ways of editing your application.
-
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/35d72d2e-6e25-40e5-9b0c-c0d1a7c1b727) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
+There are several ways of how you can edit this code.
 
 **Use your preferred IDE**
 
@@ -59,11 +54,3 @@ This project is built with .
 - React
 - shadcn-ui
 - Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/35d72d2e-6e25-40e5-9b0c-c0d1a7c1b727) and click on Share -> Publish.
-
-## I want to use a custom domain - is that possible?
-
-We don't support custom domains (yet). If you want to deploy your project under your own domain then we recommend using Netlify. Visit our docs for more details: [Custom domains](https://docs.lovable.dev/tips-tricks/custom-domain/)
