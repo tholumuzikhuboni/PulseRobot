@@ -74,6 +74,8 @@ const Navbar = () => {
             Home
           </a>
           <a href="#features" className="nav-link">About</a>
+          <a href="#testimonials" className="nav-link">Testimonials</a>
+          <a href="#newsletter" className="nav-link">Newsletter</a>
           <a href="#details" className="nav-link">Contact</a>
         </nav>
 
@@ -145,6 +147,28 @@ const Navbar = () => {
             <span className="text-gray-400 text-sm">02</span>
           </a>
           <a 
+            href="#testimonials" 
+            className="text-lg font-medium py-4 border-b border-gray-100 flex items-center justify-between hover:text-pulse-500" 
+            onClick={() => {
+              setIsMenuOpen(false);
+              document.body.style.overflow = '';
+            }}
+          >
+            <span>Testimonials</span>
+            <span className="text-gray-400 text-sm">03</span>
+          </a>
+          <a 
+            href="#newsletter" 
+            className="text-lg font-medium py-4 border-b border-gray-100 flex items-center justify-between hover:text-pulse-500" 
+            onClick={() => {
+              setIsMenuOpen(false);
+              document.body.style.overflow = '';
+            }}
+          >
+            <span>Newsletter</span>
+            <span className="text-gray-400 text-sm">04</span>
+          </a>
+          <a 
             href="#details" 
             className="text-lg font-medium py-4 border-b border-gray-100 flex items-center justify-between hover:text-pulse-500" 
             onClick={() => {
@@ -153,7 +177,7 @@ const Navbar = () => {
             }}
           >
             <span>Contact</span>
-            <span className="text-gray-400 text-sm">03</span>
+            <span className="text-gray-400 text-sm">05</span>
           </a>
         </nav>
 
