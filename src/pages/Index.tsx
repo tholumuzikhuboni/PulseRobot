@@ -61,12 +61,13 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      <main className="space-y-0"> {/* Removed spacing between sections */}
+      <main className="space-y-0">
         <Hero />
         <HumanoidSection />
         <SpecsSection />
         <DetailsSection />
         <ImageShowcaseSection />
+        <div className="h-8 sm:h-12 bg-white"></div> {/* Spacer div for additional separation */}
         <Features />
         <Testimonials />
         <Newsletter />
