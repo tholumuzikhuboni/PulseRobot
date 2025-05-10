@@ -22,13 +22,13 @@ const MadeByHumans = () => {
             
             <div className="overflow-hidden max-h-[60px] sm:max-h-[80px] mt-6 sm:mt-10 md:mt-40">
               <h2 
-                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-playfair text-white italic font-thin text-center mb-0 transform translate-y-0" 
+                className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-playfair text-white italic font-thin text-left mb-0 transform translate-y-0" 
                 style={{
                   marginBottom: "-30px",
                   padding: "0px 0px 100px"
                 }}
               >
-                Made By Muzi
+                Built by Tholumuzi
               </h2>
             </div>
             
