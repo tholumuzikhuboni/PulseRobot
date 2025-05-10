@@ -1,5 +1,5 @@
 # Pulse Robot
-Welcome to the Pulse Robot, A free template built by Tholumuzi Kuboni with the help of @Lovable.dev
+Welcome to the Pulse Robot, A free template built by **Tholumuzi** and **@rezaularif** with the help of **@lovable.dev**
 
 ## Project info
 
