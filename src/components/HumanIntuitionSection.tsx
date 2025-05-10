@@ -1,11 +1,19 @@
 
 import React, { useRef } from "react";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const HumanIntuitionSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   return (
-    <section className="py-12 bg-gray-50" id="human-intuition" ref={sectionRef}> {/* Reduced from py-20 */}
+    <section className="py-12 bg-gray-50" id="human-intuition" ref={sectionRef}>
       <div className="section-container opacity-0 animate-on-scroll">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="text-left">
@@ -37,7 +45,23 @@ const HumanIntuitionSection = () => {
               ))}
             </ul>
           </div>
-          {/* Image container div has been removed */}
+          <div className="hidden lg:block">
+            <Carousel className="w-full max-w-md mx-auto">
+              <CarouselContent>
+                {[1, 2, 3].map((item) => (
+                  <CarouselItem key={item}>
+                    <Card>
+                      <CardContent className="flex aspect-square items-center justify-center p-6">
+                        <span className="text-4xl font-semibold">Atlas AI {item}</span>
+                      </CardContent>
+                    </Card>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+          </div>
         </div>
       </div>
     </section>

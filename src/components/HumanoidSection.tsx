@@ -32,7 +32,7 @@ const HumanoidSection = () => {
       observer.observe(sectionRef.current);
     }
     
-    // Optimized scroll handler using requestAnimationFrame
+    // Enhanced scroll handler for smoother card transitions
     const handleScroll = () => {
       if (!ticking.current) {
         lastScrollY.current = window.scrollY;
@@ -42,7 +42,9 @@ const HumanoidSection = () => {
           
           const sectionRect = sectionRef.current.getBoundingClientRect();
           const viewportHeight = window.innerHeight;
-          const totalScrollDistance = viewportHeight * 2;
+          
+          // Reduced total scroll distance for quicker transitions between cards
+          const totalScrollDistance = viewportHeight;
           
           // Calculate the scroll progress
           let progress = 0;
@@ -50,10 +52,10 @@ const HumanoidSection = () => {
             progress = Math.min(1, Math.max(0, Math.abs(sectionRect.top) / totalScrollDistance));
           }
           
-          // Determine which card should be visible based on progress
-          if (progress >= 0.66) {
+          // Adjust thresholds for faster card transitions
+          if (progress >= 0.6) {
             setActiveCardIndex(2);
-          } else if (progress >= 0.33) {
+          } else if (progress >= 0.25) {
             setActiveCardIndex(1);
           } else {
             setActiveCardIndex(0);
@@ -86,7 +88,7 @@ const HumanoidSection = () => {
     <div 
       ref={sectionRef} 
       className="relative" 
-      style={{ height: '300vh' }}
+      style={{ height: '200vh' }} // Reduced from 300vh to 200vh for faster scrolling
     >
       <section className="w-full h-screen py-10 md:py-16 sticky top-0 overflow-hidden bg-white" id="why-humanoid">
         <div className="container px-6 lg:px-8 mx-auto h-full flex flex-col">
